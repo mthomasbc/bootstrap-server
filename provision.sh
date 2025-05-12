@@ -32,3 +32,8 @@ docker run -d --name prometheus \
     -p 9090:9090 \
     -v /vagrant/prometheus.yml:/etc/prometheus/prometheus.yml \
     prom/prometheus
+
+# Check if the container is running:
+cd /vagrant
+docker compose up -d
+
